@@ -3,8 +3,7 @@ name: publish
 # Publishes to PyPI when a GitHub release is published. Uses PyPI trusted
 # publishing (OIDC), so there is no API token in the repo. The PyPI side needs a
 # publisher for: owner Xavierfok, repo langchain-singapore-proxy, workflow publish.yml,
-# environment pypi. The PyPI name is langchain-singapore-proxy because PyPI treats
-# proxy-rotator as too close to the existing proxyrotator.
+# environment pypi.
 
 on:
   release:
