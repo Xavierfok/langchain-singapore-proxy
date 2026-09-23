@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "langchain-singapore-proxy"
+version = "0.1.0"
+description = "LangChain tools that fetch pages and run Google searches from a real Singapore mobile IP (Singtel or M1)."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Xavier Fok" }]
+requires-python = ">=3.10"
+dependencies = ["langchain-core>=0.3", "httpx>=0.25"]
+keywords = ["langchain", "langchain-tools", "singapore", "mobile-proxy", "proxy", "mcp", "web-scraping", "serp", "ai-agents"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Topic :: Internet :: WWW/HTTP",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://github.com/Xavierfok/langchain-singapore-proxy"
+Issues = "https://github.com/Xavierfok/langchain-singapore-proxy/issues"
+"Get an API key" = "https://singaporemobileproxy.com/client/mcp?utm_source=pypi&utm_medium=package&utm_campaign=langchain_singapore_proxy"
+
+[tool.hatch.build.targets.sdist]
+include = ["langchain_singapore_proxy", "tests", "README.md", "LICENSE"]
