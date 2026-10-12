@@ -26,7 +26,10 @@ class _FetchInput(BaseModel):
 
 class _SearchInput(BaseModel):
     query: str = Field(description="What to search Google for.")
-    num: int = Field(default=10, description="How many organic results to return.")
+    num: int = Field(
+        default=10,
+        description="How many organic results to return, 1-20 (the server caps it at 20).",
+    )
 
 
 class _NoInput(BaseModel):
