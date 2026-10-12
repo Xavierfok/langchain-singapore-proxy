@@ -11,8 +11,10 @@ They call the hosted [Singapore Proxy MCP server](https://github.com/Xavierfok/s
 ## Install
 
 ```bash
-pip install langchain-singapore-proxy
+pip install git+https://github.com/Xavierfok/langchain-singapore-proxy
 ```
+
+It isn't on PyPI yet, so install it from GitHub. `pip install langchain-singapore-proxy` will work once the first release is published.
 
 ## Get a key
 
